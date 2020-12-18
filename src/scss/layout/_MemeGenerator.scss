@@ -1,0 +1,117 @@
+.meme {
+    text-align: center;
+    .meme-img-container {
+        background-color: $black;
+        border: 2px solid $black;
+        padding-top: 75%; //4:3
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto $margin-sm-px;
+        @include respond-above(xs) {
+            min-height: 320px;
+            max-height: 405px;
+            max-width: 540px;
+            min-width:427px;
+        }
+        @include respond-above(lg) {
+            height: 405px;
+            width: 540px;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+        & > h2 {
+            position: absolute;
+            max-height: 80px;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 $margin-sm-px;
+            font-family: impact, sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+            text-shadow:
+                2px 2px 0 $black,
+                -2px -2px 0 $black,
+                2px -2px 0 $black,
+                -2px 2px 0 $black,
+                0 2px 0 $black,
+                2px 0 0 $black,
+                0 -2px 0 $black,
+                -2px 0 0 $black,
+                2px 2px 5px $black;
+        }
+        & > .meme-bottom-text {
+            bottom: 0;
+            margin-bottom: 5px;
+            overflow-wrap: break-word;
+        }
+
+        & > .meme-top-text {
+            margin-top: 5px;
+            overflow-wrap: break-word;
+            top: 0;
+        }
+    }
+
+    &-form {
+        width: 100%;
+        margin: 0;
+        div > input {
+            height: 40px;
+            margin-bottom: $margin-bottom-med;
+            width: 100%;
+        }
+        & > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-family: VT323, monospace;
+            font-size: $button-font-size;
+            text-align: cen
+        }
+        & > input::-moz-placeholder { /* Firefox 19+ */
+            font-family: VT323, monospace;
+            font-size: $button-font-size;
+            text-align: cen
+        }
+        & > input:-ms-input-placeholder { /* IE 10+ */
+            font-family: VT323, monospace;
+            font-size: $button-font-size;
+            text-align: cen
+        }
+        &  > input:-moz-placeholder { /* Firefox 18- */
+            font-family: VT323, monospace;
+            font-size: $button-font-size;
+            text-align: cen
+        }
+    }
+    &-button-container {
+        text-align: center;
+        margin-bottom: $margin-bottom-med;
+        @include respond-above(md) {
+            text-align: right;
+        }
+        button {
+            margin-right: $margin-sm-px;
+            &:first-child {
+                margin-bottom: $margin-sm-px;
+            }
+        }
+    }
+    &-row-spacer {
+        margin-bottom: 20px;
+        hr {
+            background-color: $pony-black;
+        }
+    }
+}

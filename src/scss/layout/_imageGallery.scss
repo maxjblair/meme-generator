@@ -1,0 +1,68 @@
+.img-gallery {
+    &-container {
+        padding: 0 $margin-sm-px;
+    }
+    &-header {
+        border: 2px solid $black;
+        color: $black;
+        font-family: VT323, monospace;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: $margin-med-px;
+        &.ole {
+            background: $yellow;
+        }
+        &.pony {
+            background: $red;
+        }    
+    }
+    &-body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img-gallery-img {
+        background-color: $black;
+        border: 2px solid $black;
+        overflow: hidden;
+        padding-top: 75%; //4:3
+        position: relative;
+        @include respond-above(lg) {
+            max-height: 164px;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.meme-images-all {
+    .carousel-container {
+        margin-right: 15px;
+    }
+    label {
+        font-size: 16px;
+        line-height: 1.15;
+        margin-top: 10px;
+        padding-left: 5px;
+        @include respond-above(sm) {
+            display: inherit
+        }
+    }
+    button {
+        &.btn {
+            font-size: .8rem;
+        }
+       svg.bi {
+           height: 25px;
+           width: 25px;
+       }
+    }
+    .meme-image-button {
+        border: none;
+        background-color: transparent;
+    }
+}

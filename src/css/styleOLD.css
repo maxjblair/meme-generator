@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #000;  /* fallback for old browsers */
+    /*
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+    */
+    margin-bottom: 2rem;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+header > svg {
+    color: #E4A01B;
+    font-size: 4.3rem;
+    margin-left: 30px;
+}
+
+header > p {
+    font-family: VT323, monospace;
+    color: #E4A01B;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #000;  /* fallback for old browsers */
+    /*
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+    */
+    height: 2px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer hr {
+    margin-top: 2rem;
+}
+
+.meme {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    max-height: 303px;
+    overflow: hidden;
+}
+
+.meme > img {
+    width: 100%;
+}
+
+.meme > h2 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.meme > .bottom {
+    bottom: 0;
+}
+
+.meme > .top {
+    top: 0;
+}
+
+.meme-form {
+    width: 100%;
+    margin: 0;
+    /*display: flex;
+    justify-content: space-between;
+    */
+}
+
+.meme-form div > input {
+    height: 40px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.meme-form button {
+    border: none;
+    font-family: VT323, monospace;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #000;
+    background: #E4A01B;
+}
+
+.meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.meme-form > input::-moz-placeholder { /* Firefox 19+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.meme-form > input:-ms-input-placeholder { /* IE 10+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.meme-form > input:-moz-placeholder { /* Firefox 18- */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+
+/********** Bootstrap Overrides **********/
+.btn {
+    border-color: #111;
+    background: #6441A5
+}

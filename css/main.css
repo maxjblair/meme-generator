@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  background-image: url("../imgs/Webpage-background-image-50-opacity.png");
+}
+
+.container {
+  background-color: #f9f9f9;
+}
+@media (min-width: 992px) {
+  .container {
+    background-color: black;
+  }
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+  */
+  margin-bottom: 2rem;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+header > svg {
+  font-size: 4.3rem;
+  margin-left: 30px;
+}
+header > p {
+  font-family: VT323, monospace;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+header.ole {
+  background-color: #E4A01B;
+  border-bottom: 2px solid #000000;
+}
+header.ole > svg {
+  color: #000000;
+}
+header.ole > p {
+  color: #000000;
+}
+header.pony {
+  background-color: #D4151C;
+  border-bottom: 2px solid #000000;
+}
+header.pony > svg {
+  color: #000000;
+}
+header.pony > p {
+  color: #000000;
+}
+
+footer {
+  background: #000000;
+  /* fallback for old browsers */
+  /*
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+  */
+  height: 2px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+footer .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .row .col {
+  text-align: right;
+}
+footer .row .col button {
+  font-size: 0.8rem;
+}
+footer .row .col button svg {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.meme {
+  text-align: center;
+}
+.meme .meme-img-container {
+  background-color: #000000;
+  min-height: 320px;
+  margin: 0 auto 15px;
+  width: 100%;
+  /*        @include respond-above(xs) {
+              width: 424px;
+          }
+          */
+  position: relative;
+}
+.meme .meme-img-container img {
+  border: 2px solid #000000;
+}
+.meme .meme-img-container > h2 {
+  position: absolute;
+  max-height: 80px;
+  overflow: hidden;
+  width: 424px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  /*margin: $margin-sm-px 0;*/
+  padding: 0 15px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 0 2px 0 #000000, 2px 0 0 #000000, 0 -2px 0 #000000, -2px 0 0 #000000, 2px 2px 5px #000000;
+}
+.meme .meme-img-container > .meme-bottom-text {
+  bottom: 0;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+}
+.meme .meme-img-container > .meme-top-text {
+  margin-top: 5px;
+  overflow-wrap: break-word;
+  top: 0;
+}
+.meme-form {
+  width: 100%;
+  margin: 0;
+  /*display: flex;
+  justify-content: space-between;
+  */
+}
+.meme-form div > input {
+  height: 40px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.meme-form > input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: VT323, monospace;
+  font-size: 20px;
+  text-align: cen;
+}
+.meme-form > input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: VT323, monospace;
+  font-size: 20px;
+  text-align: cen;
+}
+.meme-form > input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: VT323, monospace;
+  font-size: 20px;
+  text-align: cen;
+}
+.meme-form > input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: VT323, monospace;
+  font-size: 20px;
+  text-align: cen;
+}
+.meme-images-all label {
+  font-size: 16px;
+  line-height: 1.15;
+  margin-top: 5px;
+}
+.meme-images-all button.btn {
+  font-size: 0.8rem;
+}
+.meme-images-all button svg.bi {
+  height: 25px;
+  width: 25px;
+}
+.meme-images-all .meme-image-button {
+  border: none;
+  background-color: transparent;
+}
+.meme-button-container {
+  text-align: right;
+}
+.meme-button-container button:first-child {
+  margin-right: 15px;
+}
+.meme-row-spacer {
+  margin-bottom: 20px;
+}
+.meme-row-spacer hr {
+  background-color: #2C2C2C;
+}
+
+button.btn {
+  border-width: 2px;
+  font-family: VT323, monospace;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border-color: #000000;
+  color: #000000;
+}
+button.btn.ole {
+  background: #E4A01B;
+}
+button.btn.pony {
+  background: #D4151C;
+}
+button.btn-margin-right {
+  margin-right: 30px;
+}
+
+.img-gallery-header {
+  border: 2px solid #000000;
+  color: #000000;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.img-gallery-header.ole {
+  background: #E4A01B;
+}
+.img-gallery-header.pony {
+  background: #D4151C;
+}
+/*# sourceMappingURL=main.css.map */

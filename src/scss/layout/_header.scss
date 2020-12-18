@@ -1,0 +1,25 @@
+header {
+    align-items: center;
+    border-bottom: 2px solid $black;
+    display: flex;
+    height: 100px;
+    /*
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+    */
+    margin-bottom: $margin-bottom-med;
+    margin-left: $bs-negative-margin;
+    margin-right: $bs-negative-margin;
+    & > svg {
+        font-size: 4.3rem;
+        margin-left: $margin-med-px;
+    }
+    & > p {
+        font-family: VT323, monospace;
+        font-size: 50px;
+        line-height: .8;
+        margin-left: $margin-med-px;
+        margin-top: 10px;
+    }
+
+}

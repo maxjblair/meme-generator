@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; 
+}  
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    background-image: url("../imgs/Webpage-background-image-50-opacity.png");
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    @include respond-above(lg) {
+        max-width: 1200px;
+    }
+}
+
+.row {
+    margin-bottom: $margin-bottom-med;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button.btn {
+    border-width: 2px;
+    font-family: VT323, monospace;
+    font-size: $button-font-size;
+    letter-spacing: 1.5px;
+    border-color: $black;
+    &-margin-right {
+        margin-right: $margin-med-px
+    }
+}
+
+.ole {
+    background: $yellow;
+    color: $black;
+}
+
+.pony {
+    background: $red;
+    color: white;
+}

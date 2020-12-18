@@ -1,0 +1,38 @@
+footer {
+    /*
+    background: $black;  /* fallback for old browsers
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+    */
+    background-color: lightgrey;
+    border-top: 2px solid $black;
+    margin-left: $bs-negative-margin;
+    margin-right: $bs-negative-margin;
+    padding-top: $margin-sm-px;
+    .container {
+        background-color: inherit;
+        padding-bottom: $margin-sm-px;
+        .row {
+            margin: 0;
+            .footer-left {
+                font-size: .8em;
+            }
+            .footer-right {
+                padding-top: 30px;
+                text-align: left;
+                @include respond-above(sm) {
+                    padding-top: 0;
+                    text-align: right;
+                }
+                button {
+                    font-size: .8rem;
+                    svg {
+                        height: 20px;
+                        margin-right: 10px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
